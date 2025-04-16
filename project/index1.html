@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Startup 3</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
+      
+    
+
+    .left-section {
+      width: 60%;
+       padding: 50px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .nav {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav p {
+      color: #15143966;
+    }
+
+    .title {
+      font-size: 3rem;
+      color: #1E0E62;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      color: #6c6c80;
+      max-width: 400px;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons button {
+     padding: 28px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .get-started {
+      background-color: #25DAC5;
+      color: white;
+    }
+
+    .learn-more {
+      border: 1px solid #EBEAED;
+      background: white;
+      color: #1E0E62;
+    }
+
+    .terms {
+      font-size: 12px;
+      color: #6c6c80;
+      margin-top: 20px;
+    }
+
+    .right-section {
+      width: 50vw;
+    }
+
+    .right-section img {
+      height: 100vh;
+      width: 40vw;
+      object-fit: cover;
+      padding-left: 2.5rem;
+    }
+    
+      
+    
+
+
+
+    
+
+    /* Features Section */
+    .features {
+      text-align: center;
+      /* padding: 4rem 2rem; */
+       background-image: linear-gradient(rgba(97, 14, 98, 0.8), rgba(30, 14, 98, 0.8)),
+        url("https://s3-alpha-sig.figma.com/img/f7e8/f8e2/82f037bd55e52d4b954227648e8bf9ff?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=n3ItIqzYY~LoAAvANVMjrUgUNwZFX~QyXn83NUWK8p3kXdOj4BtFksBh48XzXG82210QGbywyhmjRBtlIGttRbQunMA5LgIBhpA6lGWuh6uW2jCS5~1cS28tEbgGyAeDqwRZiJM5-nCUPB9yEMFJv2nYOc849oPOn-9s7IRy5LVziQydUt8UYLLPxmnlbo2HomMFLEqsOarxSDICdy2dW2E5RwG0hiA9Er~OC3We-npkxUvQIOFcUIsxs5I2a38uVeo5b~KbMwgc~NqPCaW1DaWreOoaoZw~Le3DbpA6EmY5~Pi8iAEpBt2CH6Ikh~ZnFGH1vcraS1b7W5lFSDJPAQ__");
+      background-size: cover;
+      box-sizing: border-box;
+      /* background-position: center; */
+      background-repeat: no-repeat;
+      color: #FFFFFF;
+      height:100vh;
+      width:100vw;
+      back
+    }
+
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .features p.description-text {
+       max-width: 600px;
+       margin: 0 auto; 
+      color: #ffffff;
+    }
+
+    .main-features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding-top: 3rem;
+    }
+     
+    
+
+    .feature-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      width: 250px;
+      height: 22rem;
+      text-align: center;
+      justify-content: space-evenly;
+    }
+
+    .feature-card .icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-card p {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .feature-card button {
+      margin-top: 1rem;
+       padding:  16px; 
+      background: #ff5c93;
+      border: none;
+      border-radius: 20px;
+      color: #fff;
+    }
+      
+   
+    
+
+    /* Team Section */
+    .team-section {
+        height: 100vh;
+        width:100vw;
+
+        text-align: center;
+        color: white;
+        padding-top: 3rem;
+    }
+
+    .team-section h2 {
+       margin-bottom: 1rem; 
+      color:#1E0E62;
+    }
+    .team-btn {
+       padding:12px 24px;  
+      background-color: white;
+      color: #1E0E62;
+      border: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 8rem;
+      margin-top: 2rem;
+    }
+    .main-container{
+      height:70vh;
+      width:100vw;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .sub-container{
+      height:50vh;
+      width:17vw;
+      border: 2px solid black;
+      margin: 1rem;
+    }
+    .logo{
+      height:15vh;
+      width:17vw;
+      border-top: 2px solid black;
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 5rem;
+    }
+    .footer {
+      background-color: #2E0E8C;
+      color: #fff;
+      height: 30vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      text-align: center;
+}
+
+.footer nav {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  
+}
+
+.footer a {
+  color: #FFFFFF;
+  padding-bottom: 2rem;
+}
+
+.footer p {
+  color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <div class="container">
+    <div class="left-section">
+      <div class="navbar">
+        <h2 style="color:#1E0E62;">Startup 3</h2>
+        <div class="nav">
+          <p>Pricing</p>
+          <p>About</p>
+        </div>
+      </div>
+      <div class="content">
+        <h1 class="title">Great tool to boost<br>your startup</h1>
+        <p class="description">
+          We made it so beautiful and simple. It combines landings, pages, blogs and shop screens. It is definitely the tool you need in your collection!
+        </p>
+        <div class="buttons">
+          <button class="get-started">Get Started</button>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <p class="terms">By signing up, you agree to the Terms of Service</p>
+      </div>
+    </div>
+    <div class="right-section">
+     <img  src="https://s3-alpha-sig.figma.com/img/93ef/04f2/de36b1a322f358b719b336a13a2dfea6?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IL2AmC2yik5OrjJBfd-13H0WW0FXBUWpIiT-a531oXBfs~hQecK7IrnLFwHUI3H2Xgoyw538ZmXXTJb6EMJgzyvmPZJvK4v1frymqNxhrgvlqNGnJdkL-LaYurVjQODHoU3DI5cR3tUzhVLRJd0c578fMk1u2hSPGx-JCruYv-8BtBXY--O5hY~Y4MsgfspiasbLBcKx0xjjk-e-aEfMWmY668K18IuXiB1p6B0Obu4p4IdZ-fx28f3I~ZAVznM~XjkR7aN8KXFE78ZkFVUHKI5clZHRAULLolx42clTOlL6bM3wa0g2pzCqDz3~P2qwNrkQhqImTUeynYnFTIhlQA__" alt="Hero Image"> -->
+    </div>
+  </div>
+
+  <!-- Feature Section -->
+  <div class="features">
+    <h2>Features</h2>
+    <p class="description-text">We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+    <div class="main-features">
+      <div class="feature-card">
+        <div class="icon"><i class="ri-flashlight-line"></i></div>
+         <h3>Easy to Use</h3>
+        <p>To get started, you select the desired sample and base the entire website on it. It’s that simple!</p>
+        <button>Learn More</button>
+      </div>
+      <div class="feature-card">
+        <div class="icon"><i class="ri-shuffle-line"></i></div>
+         <h3>Variety of Designs</h3> 
+        <p>You can decide whether to create your site using UI Kit blocks or samples. The blocks can merge together in various combinations.</p>
+        <button>Learn More</button>
+      </div>
+      <div class="feature-card">
+        <div class="icon"><i class="ri-play-fill"></i></div>
+        <h3>Feel our Design</h3> 
+        <p>Samples will show you the feeling on how to play around using the components in the website building process.</p>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Team Section -->
+  <div class="team-section">
+    <h2>Our Awesome Team</h2>
+    <p style="color:black;padding-left: 30%;padding-right: 30%; text-align: center;" >We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.</p>
+    <button class="team-btn">Enjoy Our Team</button>
+    <div class="main-container">
+      <div class="sub-container">
+        <img style="padding-top: 1rem;" src="Mask (1).png" alt="">
+        <h2>Vanessa Laird</h2>
+        <p style="text-align: center;color:black;">UI Designer</p>
+        <div class="logo">
+         <img style="height:11vh;width:5vw;border-right:2px solid black;" src="fa-twitter.png" alt="">
+         <img style="height:11vh;width:5vw;border-right:2px solid  black;" src="fa-facebook-square.png" alt="">
+         <img style="height:11vh;width:5vw;" src="fa-dribbble.png" alt="">
+        </div>
+      </div>
+
+      <div class="sub-container">
+        <img style="padding-top: 1rem;" src="Mask (1).png" alt="">
+        <h2>Mason Campbell</h2>
+        <p style="text-align: center;color:black;">UI Designer</p>
+        <div class="logo">
+         <img style="height:11vh;width:5vw;border-right:2px solid  black;" src="fa-twitter.png" alt="">
+         <img style="height:11vh;width:5vw;border-right:2px solid  black;" src="fa-facebook-square.png" alt="">
+         <img style="height:11vh;width:5vw;" src="fa-dribbble.png" alt="">
+        </div>
+        
+      </div>
+      <div class="sub-container">
+        <img style="padding-top: 1rem;" src="Mask (1).png" alt="">
+        <h2>Irea Evans</h2>
+        <p style="text-align: center;color:black;">Client Manager</p>
+        <div class="logo">
+         <img style="height:11vh;width:5vw;border-right:2px solid  black;" src="fa-twitter.png" alt="">
+         <img style="height:11vh;width:5vw;border-right:2px solid  black;" src="fa-facebook-square.png" alt="">
+         <img style="height:11vh;width:5vw;" src="fa-dribbble.png" alt="">
+        </div>
+      </div>
+      
+
+    </div>
+
+    
+  <!-- footer section -->
+   <div class="footer">
+   <div class="nav">
+        <a href="Portfolio-section">Portfolio</a>
+        <a href="How it works-section">How it works</a>
+        <a href="Pricing-section">Pricing</a>
+        <a href="About-section">About</a>
+        <a href="Contact-section">Contact</a>
+      </div>
+   
+     <p> © 2016 Designmodo. All rights reserved.</p>
+   </div>
+        
+    
+
+</body>
+</html>
